@@ -42,7 +42,7 @@ project.afterEvaluate {
         repositories {
             maven {
                 name = "GitHubPackages"
-                url = uri("https://maven.pkg.github.com/snellen/umvvm")
+                url = uri("https://maven.pkg.github.com/snellen/umvvm-test")
                 credentials {
                     username = githubProperties['gpr.usr'] ?: System.getenv("GPR_USER")
                     password = githubProperties['gpr.key'] ?: System.getenv("GPR_API_KEY")
