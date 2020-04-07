@@ -1,0 +1,2 @@
+include ':umvvm-test'
+rootProject.name='uMvvm-test'
