@@ -35,8 +35,10 @@ dependencies {
 }
 
 def githubProperties = new Properties()
-githubProperties.load(new FileInputStream(rootProject.file("github.properties")))
-
+def githubPropertiesFile = rootProject.file("github.properties")
+if(githubPropertiesFile.canRead()) {
+    githubProperties.load(new FileInputStream(githubPropertiesFile))
+}
 project.afterEvaluate {
     publishing {
         repositories {
